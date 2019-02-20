@@ -15,3 +15,10 @@ class Signup(models.Model):
     email = models.EmailField()
     dob = models.DateField(null=True, blank=True)
 admin.site.register(Signup)
+
+
+class Sample(models.Model):
+    name = models.CharField(max_length=255)
+
+class Simple(models.Model):
+    number = models.IntegerField()

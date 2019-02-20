@@ -15,16 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from rest_framework import routers
-from basicpro.views import *
-from basicpro import views
-from django.conf.urls import url, include
-from rest_framework.urlpatterns import format_suffix_patterns
-from rest_framework_swagger.views import get_swagger_view
-from rest_framework.documentation import include_docs_urls
-router = routers.SimpleRouter()
-schema_view = get_swagger_view(title='Registration API')
-router.register(r'signup', views.SignUpViewSet, 'signup')
+# from rest_framework import routers
+# from basicpro.views import *
+# from basicpro import views
+# from django.conf.urls import url, include
+# from rest_framework.urlpatterns import format_suffix_patterns
+# from rest_framework_swagger.views import get_swagger_view
+# from rest_framework.documentation import include_docs_urls
+# router = routers.SimpleRouter()
+# schema_view = get_swagger_view(title='Registration API')
+# router.register(r'signup', views.SignUpViewSet, 'signup')
 #router.register(r'get_all_users', views.SignUpViewSet, 'get_all_users$')
 # all_signup = SignUpViewSet.as_view({
 #    'post': 'register'
@@ -36,9 +36,9 @@ router.register(r'signup', views.SignUpViewSet, 'signup')
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^docs/', include_docs_urls(title='My API title')),
-    url(r'^schema_view', schema_view),
-    url(r'^', include(router.urls))
+    # url(r'^docs/', include_docs_urls(title='My API title')),
+    # url(r'^schema_view', schema_view),
+    # url(r'^', include(router.urls))
 ]
 # urlpatterns += format_suffix_patterns([
 #    url(r'^signup$', all_signup, name='all_signup'),
