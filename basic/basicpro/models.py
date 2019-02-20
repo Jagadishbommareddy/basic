@@ -15,3 +15,6 @@ class Signup(models.Model):
     email = models.EmailField()
     dob = models.DateField(null=True, blank=True)
 admin.site.register(Signup)
+
+class Simple(models.Model):
+    number = models.IntegerField()
