@@ -78,7 +78,6 @@ WSGI_APPLICATION = 'basic.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-<<<<<<< HEAD
     'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'basic1',
@@ -87,15 +86,6 @@ DATABASES = {
         }
     }
 
-=======
-       'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'basic',
-            'USER':'root',
-            'PASSWORD':'password'
-        }
-    }
->>>>>>> a5228e9d7e7b72e871f71e74f25c41574b807dc2
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators

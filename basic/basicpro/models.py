@@ -16,12 +16,8 @@ class Signup(models.Model):
     dob = models.DateField(null=True, blank=True)
 admin.site.register(Signup)
 
-<<<<<<< HEAD
-=======
-
 class Sample(models.Model):
     name = models.CharField(max_length=255)
 
->>>>>>> a5228e9d7e7b72e871f71e74f25c41574b807dc2
 class Simple(models.Model):
     number = models.IntegerField()

@@ -11,12 +11,12 @@ class Migration(migrations.Migration):
         ('basicpro', '0002_sample'),
     ]
 
-    operations = [
-        migrations.CreateModel(
-            name='Simple',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('number', models.IntegerField()),
-            ],
-        ),
-    ]
+    # operations = [
+    #     migrations.CreateModel(
+    #         name='Simple',
+    #         fields=[
+    #             ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+    #             ('number', models.IntegerField()),
+    #         ],
+    #     ),
+    # ]
