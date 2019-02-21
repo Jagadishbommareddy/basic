@@ -22,3 +22,12 @@ class Sample(models.Model):
 
 class Simple(models.Model):
     number = models.IntegerField()
+
+class Current(models.Model):
+    descr = models.CharField(max_length=255)
+    ts = models.ForeignKey(Sample)
+    ps = models.ForeignKey(Simple)
+
+admin.site.register(Sample)
+admin.site.register(Simple)
+admin.site.register(Current)
