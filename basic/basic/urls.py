@@ -25,15 +25,37 @@ from django.contrib import admin
 # router = routers.SimpleRouter()
 # schema_view = get_swagger_view(title='Registration API')
 # router.register(r'signup', views.SignUpViewSet, 'signup')
+<<<<<<< HEAD
 # #router.register(r'get_all_users', views.SignUpViewSet, 'get_all_users$')
 # # all_signup = SignUpViewSet.as_view({
 # #    'post': 'register'
 # # })
+=======
+#router.register(r'get_all_users', views.SignUpViewSet, 'get_all_users$')
+# all_signup = SignUpViewSet.as_view({
+#    'post': 'register'
+# })
+
+# get_all_users = SignUpViewSet.as_view({
+#    'get': 'get_all_users'
+# })
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    # url(r'^docs/', include_docs_urls(title='My API title')),
+    # url(r'^schema_view', schema_view),
+    # url(r'^', include(router.urls))
+]
+# urlpatterns += format_suffix_patterns([
+#    url(r'^signup$', all_signup, name='all_signup'),
+#    #url(r'^get_all_users$',get_all_users, name='get_all_users'),
+>>>>>>> a5228e9d7e7b72e871f71e74f25c41574b807dc2
 #
 # # get_all_users = SignUpViewSet.as_view({
 # #    'get': 'get_all_users'
 # # })
 #
+<<<<<<< HEAD
 urlpatterns = [
 #     url(r'^admin/', admin.site.urls),
 #     url(r'^docs/', include_docs_urls(title='My API title')),
@@ -46,3 +68,6 @@ urlpatterns = [
 # #
 # #
 # # ])
+=======
+# ])
+>>>>>>> a5228e9d7e7b72e871f71e74f25c41574b807dc2

@@ -9,6 +9,7 @@ from __future__ import unicode_literals
 # from rest_framework_swagger.renderers import OpenAPIRenderer, SwaggerUIRenderer
 # from rest_framework.decorators import api_view, renderer_classes
 # from rest_framework import response, schemas
+<<<<<<< HEAD
 # from rest_framework_swagger.views import get_swagger_view
 # # Create your views here.
 # '''
@@ -23,6 +24,22 @@ from __future__ import unicode_literals
 #         #else:
 #             #return HttpResponse("validation wrong")
 # '''
+=======
+#from rest_framework_swagger.views import get_swagger_view
+# Create your views here.
+'''
+class SignUpViewset(viewsets.ModelViewSet):
+    queryset = Signup.objects.all()
+    serializer_class = SignUpSerializer
+    #def create(self,request,*args,**kwrgs):
+        #serializer = SignUpSerializer(data=request.data)
+        #if serializer.is_valid():
+            #request_ob = serializer.save()
+            #return HttpResponse("sucess")
+        #else:
+            #return HttpResponse("validation wrong")
+'''
+>>>>>>> a5228e9d7e7b72e871f71e74f25c41574b807dc2
 # class SignUpViewSet(viewsets.ViewSet):
 #     def create(self, request):
 #         data = request.data
